@@ -1,0 +1,66 @@
+.contact-bg {
+    padding-top: 70px;
+    
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/img/panelproductos.jpg'); /* Verifica esta ruta */
+    background-position: 55% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div {
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #F9B233;
+    border-radius: 5px;
+}
+.line {
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #F9B233;
+    border-radius: 50%;
+}.text {
+    font-weight: 300;
+    opacity: 0.9;
+}.contact-bg .text {
+    margin: 1.6rem 0;
+}@media screen and (min-width: 768px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-bg{
+        padding-top: 50px;
+    }
+}@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+    .contact-bg{
+        padding-top: 50px;
+    }
+}

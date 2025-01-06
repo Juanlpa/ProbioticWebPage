@@ -1,0 +1,632 @@
+@charset "UTF-8";
+/*
+*
+* Trunk version 1.2.2
+*
+*/
+/**
+* Template Style
+*
+* [Table of contents]
+*   1. Custom styles
+*     1.1 Main Styles
+*     1.2 Typography
+*     1.3 Backgrounds
+*     1.4 Colors
+*     1.5 Main layout
+*
+*   2. Components
+*     2.1 Icons
+*     2.2 Buttons
+*     2.3 Forms
+*     2.4 Tables
+*     2.5 Lists
+*     2.6 Post
+*     2.7 Thumbnail
+*     2.8 Tooltip
+*     2.9 Snackbars
+*     2.10 Navigation
+*     2.11 Preloader
+*     2.12 Breadcrumbs
+*     2.13 Panel custom
+*     2.14 Pagination custom
+*
+*   3. Helpers
+*     3.1 Text-alignment
+*     3.2 Text-styling
+*     3.3 Visibility responsive
+*     3.4 Groups
+*     3.5 Context Styling
+*     3.6 Sections
+*     3.7 Offsets
+*
+*   4. Modules
+*     4.1 Flex grid
+*     4.2 Unit-responsive
+*
+*   5 Plugins
+*     5.1 Animate
+*     5.2 Isotope
+*     5.3 Owl Carousel
+*     5.4 RD Navbar
+*     5.5 RD Parallax
+*     5.6 RD Google-Map
+*     5.7 RD Search
+*     5.8 To top
+*     5.9 Tabs
+*     5.10 Photoswipe
+*     5.11 Progress-bars
+*     5.12 Counter
+*     5.13 jquery-circle-progress
+*     5.14 Timecircles
+*     5.15 Swiper
+*
+*   6. Fonts
+*     6.1 FontAwesome
+*     6.2 MDI
+**/
+/*
+*
+* Main Styles
+* ==================================================
+*/
+html *:first-child {
+	margin-top: 0;
+}
+
+html *:last-child {
+	margin-bottom: 0;
+}
+
+body {
+
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.71429;
+	background-color: #69815D;
+}
+
+
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+*
+* Typography
+* ==================================================
+*/
+
+h3 {
+	font-size: 28px;
+	line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+	h3 {
+		line-height: 1;
+		font-size: 36px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+	h5 {
+		line-height: 1.66667;
+		font-size: 18px;
+	}
+}
+
+h6 {
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+	h6 {
+		line-height: 1.25;
+		font-size: 16px;
+	}
+}
+
+/*
+*
+* Backgrounds
+* ==================================================
+*/
+
+.bg-secondary-4 {
+	background: #C8D9C0;
+}
+
+/*
+*
+* Colors
+* ==================================================
+*/
+
+
+/*
+*
+* Main layout
+* ==================================================
+*/
+
+/*
+*
+* Components
+* ==================================================
+*/
+/*
+*
+* Icons
+* --------------------------------------------------
+*/
+.icon {
+	display: inline-block;
+	line-height: 24px;
+}
+
+.icon:before {
+	position: relative;
+	display: inline-block;
+	font-weight: 400;
+	font-style: normal;
+	speak: none;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+*
+* Buttons
+* --------------------------------------------------
+*/
+.button {
+	display: inline-block;
+	position: relative;
+	padding: 15px 38px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-style: solid;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	user-select: none;
+	transition: 250ms all ease-in-out;
+	font-family: "Poppins", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	border-width: 0;
+}
+
+.button:focus, .button:active, .button:active:focus {
+	outline: none;
+}
+
+.button.button-effect-ujarak span {
+	position: relative;
+	z-index: 2;
+}
+
+.button.button-effect-ujarak:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	bottom: -3px;
+	left: 10%;
+	right: 10%;
+	transition: all 250ms ease-in;
+	opacity: 0;
+	z-index: 0;
+}
+
+.button.button-effect-ujarak:after {
+	content: '';
+	position: absolute;
+	top: -3px;
+	bottom: -3px;
+	left: -3px;
+	right: -3px;
+	z-index: 1;
+	transition: all 250ms ease-in;
+}
+
+.button.button-effect-ujarak:hover {
+	background: transparent;
+}
+
+.button.button-effect-ujarak:hover:before {
+	opacity: 1;
+	left: -1px;
+	right: -1px;
+}
+
+.button.button-effect-ujarak:hover:after {
+	opacity: 0;
+	left: 10%;
+	right: 10%;
+}
+
+.button[class*='-outline'] {
+	padding: 11px 38px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 0;
+}
+
+.button-primary {
+	color: #fff;
+	background-color: #8f859e;
+	border-color: #8f859e;
+}
+
+.button-primary:hover, .button-primary:focus, .button-primary:active, .button-primary:hover {
+	color: #fff;
+	background-color: #dcd1d5;
+	border-color: #dcd1d5;
+}
+
+.button-primary.button-effect-ujarak:before {
+	background-color: #69815D;
+	text-decoration: none;
+}
+
+.button-primary.button-effect-ujarak:after {
+	background-color: #252423;
+	text-decoration: none;
+}
+
+.button-primary.button-effect-ujarak:hover {
+	background: transparent;
+}
+
+.button-lg {
+	padding: 19px 65px;
+	font-size: 18px;
+	line-height: 20px;
+	border-radius: 3px;
+}
+
+.button-lg[class*='-outline'] {
+	padding: 19px 65px;
+	font-size: 18px;
+	line-height: 20px;
+	border-radius: 3px;
+}
+
+.button-square {
+	border-radius: 0;
+}
+
+/*
+*
+* Form styles
+* --------------------------------------------------
+*/
+
+/*
+*
+* Lists
+* --------------------------------------------------
+*/
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*
+*
+* Posts
+* --------------------------------------------------
+*/
+
+/*
+*
+* Thumbnails
+* --------------------------------------------------
+*/
+
+/*
+*
+* Tooltip Custom
+* --------------------------------------------------
+*/
+
+/*
+*
+* Snackbars
+* --------------------------------------------------
+*/
+
+/*
+*
+* Navigation
+* --------------------------------------------------
+*/
+
+/*
+*
+* Page Loaders
+* --------------------------------------------------
+*/
+
+/* EDITABLE PARAMETERS */
+@keyframes flicker {
+	0% {
+		background: transparent;
+	}
+	50% {
+		background: white;
+	}
+	100% {
+		background: transparent;
+	}
+}
+
+@keyframes neon {
+	0% {
+		text-shadow: none;
+	}
+	50% {
+		text-shadow: rgba(255, 255, 255, 0.8) 0 0 8px;
+	}
+	100% {
+		text-shadow: none;
+	}
+}
+
+/*
+*
+* Pagination custom
+* --------------------------------------------------
+*/
+
+@media (min-width: 768px) {
+	.box-outline {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		padding-top: 20px;
+	}
+	.box-outline > *:nth-child(1):before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		border: 5px solid #69815D;
+		content: "";
+		transform: translate(-22px, -20px);
+		transition: 550ms ease-in-out;
+	}
+	.box-outline__mod-1 > *:nth-child(1):before {
+		left: 6px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.box-outline__mod-1 > *:nth-child(1) {
+		margin-left: 27px;
+	}
+	.box-outline__mod-1 > *:nth-child(1):before {
+		left: 17px;
+	}
+}
+
+/*
+*
+* Helpers
+* ==================================================
+*/
+/*
+*
+* Text Alignment
+* --------------------------------------------------
+*/
+
+.text-center {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	html:not(.lt-ie10) .text-sm-left {
+		text-align: left;
+	}
+}
+
+.section-md {
+	padding-top: 65px;
+	padding-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+	.section-md {
+		padding-top: 95px;
+		padding-bottom: 110px;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+	* + .button {
+		margin-top: 40px;
+	}
+}
+
+html .range-50 {
+	position: relative;
+	transform: translateY(-50px);
+	margin-bottom: -50px;
+	pointer-events: none;
+}
+
+html .range-50 > *:before {
+	content: '';
+	display: table;
+	width: 0;
+}
+
+html .range-50 > * {
+	margin-top: 50px;
+	pointer-events: auto;
+}
+
+/*
+*
+* Modules
+* ==================================================
+*/
+/*
+*
+* Flex Grid system
+* --------------------------------------------------
+*/
+.shell {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.shell {
+	min-width: 300px;
+	max-width: 480px;
+}
+
+@media (min-width: 768px) {
+	.shell {
+		max-width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.shell {
+		max-width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.shell {
+		max-width: 1200px;
+	}
+}
+
+.range {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.range > .range {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+[class*="cell-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+* + .range {
+	margin-top: 50px;
+}
+
+
+* + [class*='cell-'] {
+	margin-top: 30px;
+}
+
+.range {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.range > .range {
+	-webkit-flex-basis: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+.range > [class*='cell'] {
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-flex-basis: 100%;
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	max-width: 100%;
+}
+
+@media (min-width: 768px) {
+	* + [class*='cell-sm-'] {
+		margin-top: 0;
+	}
+	.range-sm-middle {
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.range > .cell-sm-6 {
+		-webkit-flex-basis: 50%;
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	* + [class*='cell-md-'] {
+		margin-top: 0;
+	}
+	.range-md-justify {
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	.range > .cell-md-5 {
+		-webkit-flex-basis: 41.66667%;
+		-ms-flex-preferred-size: 41.66667%;
+		flex-basis: 41.66667%;
+		max-width: 41.66667%;
+	}
+}
+
+/*
+*
+* Responsive unit
+* --------------------------------------------------
+*/
+
+@media (max-width: 479px) {
+	.container [class*='col'] {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
